@@ -67,7 +67,8 @@ mount /dev/boot_partition /mnt/boot/efi
 ```swapon dev/swap_partition ```
 
 ## Installing Packages
-``` pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel nano grub efibootmgr networkmanager ```
+``` pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel nano grub efibootmgr networkmanager ``` <br>
+Could also add amd-ucode or intel-ucode depending on the CPU
 <br>
 ## Genstab
 
