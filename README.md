@@ -43,7 +43,9 @@ Run ```device devicename show``` devicename could be something like wlan0 <br>
 To connect run ```station wlan0 connect Wi-FiName``` <br>
 ``` exit``` <br>
 Run ``` ping www.google.com``` to check internet connection
+
 ---
+
 To list available disk use <br>
 ```lsblk```
 <br>
