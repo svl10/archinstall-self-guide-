@@ -31,12 +31,13 @@ You can now proceed to use archinstall
 ## Manual Install
 
 ### Connecting to Wi-Fi (Optional)
+
 ```
 iwctl
 device list
 ```
-<br>
-Run ``` device devicename show``` devicename could be something like wlan0 <br>
+
+Run ```device devicename show``` devicename could be something like wlan0 <br>
 ``` station wlan0 get-networks``` to show available Wi-Fi networks <br>
 To connect run ```station wlan0 connect Wi-FiName``` <br>
 ``` exit``` <br>
