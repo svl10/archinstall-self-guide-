@@ -67,7 +67,7 @@ mount /dev/boot_partition /mnt/boot/efi
 ```swapon dev/swap_partition ```
 
 ## Installing Packages
-``` pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel nano grub efibootmgr networkmanager ``` <br>
+``` pacstrap /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager ``` <br>
 Could also add amd-ucode or intel-ucode depending on the CPU
 <br>
 ## Genstab
@@ -88,7 +88,7 @@ use ```date``` to check
 
 ## locale.gen
 ```nano /etc/locale.gen ``` remove # from chosen language .UTF-8 UTF-8 <br>
-run ```locale.gen``` to generate <br>
+run ```locale-gen``` to generate <br>
 create locale.conf by running ```nano /etc/locale.conf``` and input ```LANG=choosenlanguage.UTF-8 <br>
 
 ## Host Name
@@ -112,7 +112,7 @@ run ```EDITOR=nano visudo``` and uncomment or remove # %wheel ALL=(ALL) ALL from
 ```systemctl enable NetworkManager```
 
 ## Setting up Grub
-```grub-install /dev/installeddisk```
+```grub-install /dev/installeddisk``` <br>
 ```grub-mkconfig -o /boot/grub/grub.cfg```
 
 ## Reboot
