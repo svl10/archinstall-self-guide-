@@ -31,6 +31,7 @@ You can now proceed to use archinstall
 ## Manual Install
 
 ### Connecting to Wi-Fi (Optional)
+<br>
 
 ```
 iwctl
