@@ -31,8 +31,16 @@ You can now proceed to use archinstall
 ## Manual Install
 
 ### Connecting to Wi-Fi (Optional)
-<p>iwctl</p>
-
+```
+iwctl
+device list
+```
+<br>
+Run ```device devicename show``` devicename could be something like wlan0 <br>
+```station wlan0 get-networks``` to show available Wi-Fi networks <br>
+To connect run ```station wlan0 connect Wi-FiName``` <br>
+```exit``` <br>
+Run ```ping www.google.com``` to check internet connection
 ---
 To list available disk use <br>
 ```lsblk```
